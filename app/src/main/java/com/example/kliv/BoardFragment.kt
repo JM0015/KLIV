@@ -27,7 +27,6 @@ class BoardFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // 레이아웃을 인플레이트하고 바인딩 객체를 생성합니다.
         val binding = FragmentBoardBinding.inflate(inflater, container, false)
 
         val dataList = mutableListOf<BoardTitle>()
@@ -40,10 +39,10 @@ class BoardFragment : Fragment() {
 
         binding.recyclerView.layoutManager = LinearLayoutManager(context)
 
-        binding.backBtn.setOnClickListener {
+        //binding.backBtn.setOnClickListener {
 
-        }
-        // 바인딩 객체의 root를 반환합니다.
+        //}
+        
         return binding.root
     }
 

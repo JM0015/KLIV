@@ -23,9 +23,9 @@ class BoardAdapter (val dataList: MutableList<BoardTitle>) : RecyclerView.Adapte
 
     override fun onBindViewHolder(holder: Holder, position: Int) {
         // 1. 사용할 데이터를 꺼내고
-        val datum = dataList[position]
+        val boardTitle = dataList[position]
         // 2. 홀더에 데이터를 전달
-        holder.setTry(datum)
+        holder.setTry(boardTitle)
     }
 
     override fun getItemCount() = dataList.size
