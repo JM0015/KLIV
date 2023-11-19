@@ -1,5 +1,6 @@
 package com.example.kliv
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.kliv.databinding.ActivityMainBinding
@@ -11,5 +12,7 @@ class MainActivity : AppCompatActivity() {
 
         val binding = FragmentBoardBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        startActivity(Intent(this, BoardActivity::class.java))
     }
 }

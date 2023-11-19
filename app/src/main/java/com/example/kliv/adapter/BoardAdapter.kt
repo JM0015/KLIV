@@ -1,9 +1,10 @@
-package com.example.kliv
+package com.example.kliv.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.kliv.databinding.ItemMainBinding
+import com.example.kliv.dto.BoardTitle
 
 class BoardAdapter (val dataList: MutableList<BoardTitle>) : RecyclerView.Adapter<BoardAdapter.Holder>() {
 

@@ -6,7 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.kliv.adapter.BoardAdapter
 import com.example.kliv.databinding.FragmentBoardBinding
+import com.example.kliv.dto.BoardTitle
 
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
