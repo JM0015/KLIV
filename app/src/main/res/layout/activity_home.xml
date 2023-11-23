@@ -93,37 +93,147 @@
             android:layout_height="10dp"
             android:layout_weight="1" />
 
-        <ImageView
-            android:id="@+id/imageView4"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="270dp"
-            android:layout_centerHorizontal="true"
             android:layout_weight="1"
-            app:srcCompat="@drawable/barcode_reg" />
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="380dp"
+                android:layout_height="270dp"
+                android:background="@drawable/barcode_reg">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="150dp"
+                    android:layout_height="90dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.13"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.033"
+                    app:srcCompat="@drawable/profile" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Space
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
 
         <Space
             android:layout_width="match_parent"
             android:layout_height="10dp"
             android:layout_weight="1" />
 
-        <ImageView
-            android:id="@+id/imageView5"
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="130dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/my_point_reg" />
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="380dp"
+                android:layout_height="130dp"
+                android:layout_weight="1"
+                android:background="@drawable/my_point_reg"
+                android:padding="0dp"
+                android:scaleType="fitCenter">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6500"
+                    android:textSize="30dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.732"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.288" />
+
+                <ImageButton
+                    android:id="@+id/imageButton6"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="white_bell"
+                    android:padding="0dp"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.069"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.511"
+                    app:srcCompat="@drawable/recent" />
+
+                <ImageButton
+                    android:id="@+id/imageButton7"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="white_bell"
+                    android:padding="0dp"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.069"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.96"
+                    app:srcCompat="@drawable/send_to" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Space
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
 
         <Space
             android:layout_width="match_parent"
             android:layout_height="10dp"
             android:layout_weight="1" />
 
-        <ImageView
-            android:id="@+id/imageView6"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/details_about" />
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="380dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/details_about"
+                >
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
 
 
         <Space
