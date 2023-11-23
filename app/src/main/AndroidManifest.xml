@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KLIV"
         tools:targetApi="31">
+
+        <!--API KEY값 등록-->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/GOOGLE_MAPS_API_KEY" /> <!--API KEY 값 안전하게 사용-->
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -22,5 +28,10 @@
             </intent-filter>
         </activity>
     </application>
+
+    <!--권한 등록-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
 
 </manifest>
