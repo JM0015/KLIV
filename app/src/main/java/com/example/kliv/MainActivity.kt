@@ -1,14 +1,18 @@
 package com.example.kliv
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.kliv.databinding.ActivityMainBinding
+import com.example.kliv.databinding.FragmentBoardBinding
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        val binding = ActivityMainBinding.inflate(layoutInflater)
+        val binding = FragmentBoardBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        startActivity(Intent(this, BoardActivity::class.java))
     }
 }
