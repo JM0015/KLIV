@@ -224,24 +224,23 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="380dp"
                 android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
                 >
-
-                <ImageButton
-
-                    android:id="@+id/board_btn"
-                    android:layout_width="wrap_content"
+                <TextView
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/details_about"
-                    android:contentDescription="detail_reg"
+                    android:text="공지사항"
+                    android:textStyle="bold"
+                    tools:ignore="MissingConstraints" />
 
-
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.0"
-                                                             />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/boardRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="20dp" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
