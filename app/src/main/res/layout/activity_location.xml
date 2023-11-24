@@ -40,10 +40,10 @@
                 android:layout_height="50dp"
                 android:layout_weight="1"
                 android:background="@android:color/transparent"
-                android:contentDescription="icon_location"
+                android:contentDescription="icon_location_color"
                 android:padding="0dp"
                 android:scaleType="fitCenter"
-                app:srcCompat="@drawable/icon_location" />
+                app:srcCompat="@drawable/icon_location_color" />
 
             <Space
                 android:layout_width="wrap_content"
@@ -59,7 +59,7 @@
                 android:contentDescription="icon_poin"
                 android:padding="0dp"
                 android:scaleType="fitCenter"
-                app:srcCompat="@drawable/icon_point_color" />
+                app:srcCompat="@drawable/icon_point" />
 
             <Space
                 android:layout_width="10dp"
