@@ -9,7 +9,7 @@ import com.example.kliv.R
 class HomebtnActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_home)
+        setContentView(R.layout.activity_main)
 
         val detailButton =findViewById<ImageButton>(R.id.detail_button);
         val locationButton = findViewById<ImageButton>(R.id.location_button);
