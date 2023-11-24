@@ -8,7 +8,7 @@ import android.location.Location
 import android.location.LocationListener
 import android.location.LocationManager
 
-import android.content.Intent
+
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -43,21 +43,23 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        val binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        val activityBinding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(activityBinding.root)
 
-        binding.mapBtn.setOnClickListener {
+        activityBinding.mapBtn.setOnClickListener {
             val mapIntent = Intent(this, MapActivity::class.java)
             startActivity(mapIntent)
         }
 
 
+//        val fragmentBinding = FragmentBoardBinding.inflate(layoutInflater)
+//        setContentView(fragmentBinding.root)
 
+        activityBinding.boardBtn.setOnClickListener {
+            val boardIntent = Intent(this, BoardActivity::class.java)
+            startActivity(boardIntent)
+        }
 
-        val binding = FragmentBoardBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-
-        startActivity(Intent(this, BoardActivity::class.java))
 
     }
 }

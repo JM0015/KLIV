@@ -33,5 +33,11 @@
         android:id="@+id/map_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:text="map" />
+
+    <Button
+        android:id="@+id/board_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="board" />
 </LinearLayout>
