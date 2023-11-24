@@ -22,11 +22,6 @@ class MainActivity : AppCompatActivity() {
             startActivity(mapIntent)
         }
 
-//        activityBinding.boardBtn.setOnClickListener {
-//            val boardIntent = Intent(this, BoardActivity::class.java)
-//            startActivity(boardIntent)
-//        }
-
         val listData = mutableListOf<BoardTitle>()
         for (i in 1..10) {
             listData.add(BoardTitle("${i}", "title ${i}"))
@@ -35,5 +30,9 @@ class MainActivity : AppCompatActivity() {
         activityBinding.boardRecyclerView.layoutManager = LinearLayoutManager(this)
         activityBinding.boardRecyclerView.adapter = BoardAdapter(listData)
 
+        activityBinding.toBoardBtn.setOnClickListener {
+            val boardIntent = Intent(this, BoardActivity::class.java)
+            startActivity(boardIntent)
+        }
     }
 }
