@@ -1,26 +1,27 @@
 package com.example.kliv.ui_button
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.app.Activity
 import android.widget.Button
-import androidx.core.content.ContextCompat.startActivity
+import android.widget.ImageButton
+import androidx.appcompat.app.AppCompatActivity
 import com.example.kliv.R
-import com.example.kliv.ui_button.Board_activity
 
-
-public class Home_activity : Board_activity() {
-    override fun onCreate(savedInstantState: Bundle?){
-        super.onCreate(savedInstantState)
+class Home_activity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        val detailButton = findViewById<Button>(R.id.detail_button)
+        val detailButton =findViewById<ImageButton>(R.id.detail_button);
+
+        // 버튼 클릭 이벤트 처리
+        detailButton.setOnClickListener {
+            moveToBoardActivity()
+        }
     }
 
-    fun moveToBoardActivity(){
+    fun moveToBoardActivity() {
         val intent = Intent(this, Board_activity::class.java)
         startActivity(intent)
     }
-
 }
