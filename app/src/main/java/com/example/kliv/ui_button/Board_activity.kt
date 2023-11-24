@@ -1,4 +1,7 @@
 package com.example.kliv.ui_button
 
-class Board_activity {
+public open class Board_activity {
+    open fun onCreate(savedInstantState: Bundle?) {
+
+    }
 }
