@@ -11,6 +11,8 @@ import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import androidx.core.app.ActivityCompat
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentTransaction
 import com.example.kliv.databinding.ActivityMainBinding
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
@@ -27,6 +29,7 @@ import java.net.URL
 import kotlin.concurrent.thread
 
 class MainActivity : AppCompatActivity(), OnMapReadyCallback {
+
     // 허용받을 권한 목록
     val permission_list = arrayOf(
         Manifest.permission.ACCESS_FINE_LOCATION,
@@ -47,7 +50,6 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
 
     val dialogData = "park"
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -61,6 +63,7 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
         val mapFragment = supportFragmentManager.findFragmentById(R.id.map_fragment) as SupportMapFragment
         mapFragment.getMapAsync(this)
     }
+
 
     // 지도 준비가 완료되면 호출되는 메서드
     override fun onMapReady(p0: GoogleMap) {
@@ -83,10 +86,7 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
             // 맵 타입
             // googleMap.mapType = GoogleMap.MAP_TYPE_NORMAL
         }
-
         getMyLocation()
-
-
     }
 
     // 현재 위치를 측정하는 메서드
