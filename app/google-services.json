@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "754823923737",
+    "project_id": "kliv-7dfcc",
+    "storage_bucket": "kliv-7dfcc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:754823923737:android:3194f87df51d1b6d398288",
+        "android_client_info": {
+          "package_name": "com.example.kliv"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQv4VCTjdoFTl9nfwnO9b-mUw8weHwzBI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
