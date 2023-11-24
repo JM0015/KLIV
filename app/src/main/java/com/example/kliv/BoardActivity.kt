@@ -22,9 +22,7 @@ class BoardActivity : AppCompatActivity() {
 
         binding.boardRecyclerView.layoutManager = LinearLayoutManager(this)
         binding.boardRecyclerView.adapter = BoardAdapter(listData)
-        binding.boardBackBtn.setOnClickListener {
-            val mainIntent = Intent(this, MainActivity::class.java)
-            startActivity(mainIntent)
-        }
+
+
     }
 }

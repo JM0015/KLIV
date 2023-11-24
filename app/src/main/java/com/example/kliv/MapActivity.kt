@@ -67,6 +67,8 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback {
     override fun onMapReady(p0: GoogleMap) {
         googleMap = p0
 
+        val latLng = LatLng(35.88,128.61)
+        googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng,15f))
         //구글 지도의 옵션 설정을 위해 권한을 확인
         val a1 = Manifest.permission.ACCESS_FINE_LOCATION
         val a2 = Manifest.permission.ACCESS_COARSE_LOCATION
