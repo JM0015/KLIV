@@ -33,7 +33,7 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback {
         Manifest.permission.ACCESS_FINE_LOCATION, // GPS와 네트워크를 이용하여 단말기 위치 식별
         Manifest.permission.ACCESS_COARSE_LOCATION // 네트워크를 이용하여 단말기 위치 식별
     )
-
+    lateinit var binding : ActivityMapBinding
     lateinit var manager : LocationManager // GPS 정보 관리
     lateinit var locationListener: LocationListener // 위치 측정 성공 시 호출될 메서드가 구현된 메서드, 측정 한 번하고 연결 끊을 예정
     lateinit var  googleMap : GoogleMap // 구글맵 제어
@@ -49,7 +49,8 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_map)
+        binding = ActivityMapBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         supportActionBar?.setTitle("공병 반환 위치")
         supportActionBar?.setDisplayHomeAsUpEnabled(true)

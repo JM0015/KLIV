@@ -184,7 +184,8 @@
                     android:text="공지사항"
                     android:textStyle="bold"
                     android:backgroundTint="#ffffff"
-                    style="?android:attr/borderlessButtonStyle"/>
+                    style="?android:attr/borderlessButtonStyle"
+                    tools:ignore="MissingConstraints" />
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/boardRecyclerView"
