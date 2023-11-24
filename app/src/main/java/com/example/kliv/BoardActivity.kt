@@ -20,5 +20,8 @@ class BoardActivity : AppCompatActivity() {
 
         binding.boardRecyclerView.layoutManager = LinearLayoutManager(this)
         binding.boardRecyclerView.adapter = BoardAdapter(listData)
+//        binding.boardBackBtn.setOnClickListener {
+//
+//        }
     }
 }
