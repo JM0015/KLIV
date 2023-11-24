@@ -11,7 +11,7 @@ import com.example.kliv.R
 class Loading_Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_loding)
+        setContentView(R.layout.activity_loading)
 
         Handler(Looper.getMainLooper()).postDelayed(Runnable {
             val i = Intent(this,

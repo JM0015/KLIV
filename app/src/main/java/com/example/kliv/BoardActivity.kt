@@ -13,6 +13,9 @@ class BoardActivity : AppCompatActivity() {
         val binding = ActivityBoardBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        supportActionBar?.setTitle("게시판")
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        
         val listData = mutableListOf<BoardTitle>()
         for (i in 1..10) {
             listData.add(BoardTitle("${i}", "title ${i}"))
