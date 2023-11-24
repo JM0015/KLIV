@@ -1,4 +1,5 @@
 package com.example.kliv.ui_button
 
-public class PersonalinfobtnActivity {
+class PersonalinfobtnActivity {
+    
 }
