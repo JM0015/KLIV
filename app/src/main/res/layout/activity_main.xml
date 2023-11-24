@@ -227,18 +227,30 @@
                 >
 
                 <ImageButton
+
                     android:id="@+id/board_btn"
+
+                    android:id="@+id/detail_button"
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/details_about"
                     android:contentDescription="detail_reg"
+
+
+                    android:src="@drawable/details_about"
+
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.0"
+
                     android:src="@drawable/details_about" />
+
+                    tools:src="@drawable/details_about" />
+
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <Space
@@ -277,7 +289,11 @@
                     android:layout_weight="1" />
 
                 <ImageButton
+
                     android:id="@+id/map_btn"
+
+                    android:id="@+id/location_button"
+
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_weight="1"
@@ -293,7 +309,11 @@
                     android:layout_weight="1" />
 
                 <ImageButton
+
                     android:id="@+id/imageButton3"
+
+                    android:id="@+id/point_button_point"
+
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_weight="1"
@@ -320,7 +340,11 @@
                         android:layout_weight="1" />
 
                     <ImageButton
+
                         android:id="@+id/imageButton4"
+
+                        android:id="@+id/more_button"
+
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:layout_weight="1"
