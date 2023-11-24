@@ -24,9 +24,5 @@ class MainActivity : AppCompatActivity() {
             startActivity(boardIntent)
         }
 
-        val binding = FragmentBoardBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-
-        startActivity(Intent(this, BoardActivity::class.java))
     }
 }
