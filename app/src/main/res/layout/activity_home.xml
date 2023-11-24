@@ -238,7 +238,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.0"
-                    app:srcCompat="detail_button" />
+                    android:src="@drawable/details_about" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <Space
