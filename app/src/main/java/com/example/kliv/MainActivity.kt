@@ -7,7 +7,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.kliv.adapter.BoardAdapter
 import com.example.kliv.databinding.ActivityBoardBinding
 import com.example.kliv.databinding.ActivityMainBinding
-import com.example.kliv.databinding.FragmentBoardBinding
 import com.example.kliv.dto.BoardTitle
 
 class MainActivity : AppCompatActivity() {
