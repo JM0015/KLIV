@@ -51,10 +51,6 @@ class MainActivity : AppCompatActivity() {
             startActivity(mapIntent)
         }
 
-
-//        val fragmentBinding = FragmentBoardBinding.inflate(layoutInflater)
-//        setContentView(fragmentBinding.root)
-
         activityBinding.boardBtn.setOnClickListener {
             val boardIntent = Intent(this, BoardActivity::class.java)
             startActivity(boardIntent)
